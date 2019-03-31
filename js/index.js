@@ -1,1 +1,1 @@
-var you = "you are success";
+var you = "you are s";
