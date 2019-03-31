@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+		body{
+			margin: 0;
+		}
+			header{
+				width: 6.4rem;
+				height: 1rem;
+				background: #FF0000;
+			}
+			article{
+				width:6.4rem;
+				height: 3rem;
+				background:#00FF00;
+			}
+			aside{
+				width: 6.4rem;
+				height: 3rem;
+				background:#00FFFF;
+			}
+			figure{
+				width: 6.4rem;
+				height: 4rem;
+				background:#FF0000;
+				margin:0;
+			}
+			footer{
+				width: 6.4rem;
+				height: 1rem;
+				background:#00FF00;
+			}
+		</style>
+	</head>
+	<body>
+		<header></header>
+		<article>
+			<section></section>
+		</article>
+		<aside></aside>
+		<figure></figure>
+		<footer></footer>
+	</body>
+	<script type="text/javascript">
+		window.onresize=r;
+		function r(resizenum){
+			var winW=window.innerWidth;
+			document.getElementsByTagName("html")[0].style.fontSize=winW*0.15625+"px";
+			if(winW>window.screen.width&&resizenum<=10){
+				setTimeout(function(){
+					r(++resizenum);
+				},100)
+			}else{
+				document.getElementsByTagName("body")[0].style.optical=1;
+			}
+		}
+		setTimeout(r(0),100);
+	</script>
+</html>

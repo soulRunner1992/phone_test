@@ -1,0 +1,38 @@
+*{
+	margin: 0 auto;
+}
+header{
+	width: 32rem;
+	height: 5rem;
+	background: #f00;
+}
+article{
+	width: 16rem;
+	height: 15rem;
+	background:#00FF00;
+	display: inline-block;
+	float: left;
+	overflow: hidden;
+}
+article section{
+	width: 14rem;
+	height:2.5rem;
+	background: #0000FF;
+}
+aside{
+	width: 16rem;
+	height: 15rem;
+	background:#0000FF;
+    margin-left: 16rem;
+}
+figure{
+	width: 32rem;
+	height: 10rem;
+	background:#FF0000;
+	clear: both;
+}
+footer{
+	width: 32rem;
+	height: 5rem;
+	background:#00FF00;
+}
